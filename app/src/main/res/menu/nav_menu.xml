@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_portada"
+            android:title="Portada"
+            android:icon="@drawable/home_ic"/>
+
+        <item
+            android:id="@+id/nav_tarifario"
+            android:title="Tarifario de multas"
+            android:icon="@drawable/personajes_ic"/>
+
+        <item
+            android:id="@+id/nav_consulta_vehiculo"
+            android:title="Consulta de vehiculo"
+            android:icon="@drawable/card_ic"/>
+
+        <item
+            android:id="@+id/nav_consulta_conductor"
+            android:title="Consulta de conductor"
+            android:icon="@drawable/personajes_ic"/>
+
+        <item
+            android:id="@+id/nav_aplicar_multa"
+            android:title="Aplicar multa"
+            android:icon="@drawable/aplicar_multa_ic"/>
+
+        <item
+            android:id="@+id/nav_multas_registradas"
+            android:title="Multas registradas"
+            android:icon="@drawable/multa_registradas_ic"/>
+
+        <item
+            android:id="@+id/nav_mapa_multas"
+            android:title="Mapa de multas"
+            android:icon="@drawable/location_ic"/>
+
+        <item
+            android:id="@+id/nav_noticias"
+            android:title="Noticias"
+            android:icon="@drawable/newspaper_ic"/>
+
+        <item
+            android:id="@+id/nav_clima"
+            android:title="Estado del clima"
+            android:icon="@drawable/cloud_ic"/>
+
+        <item
+            android:id="@+id/nav_horoscopo"
+            android:title="Horóscopo"
+            android:icon="@drawable/balance_ic"/>
+    </group>
+    <item
+        android:title="Log out">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_cerrarSesion"
+                android:title="Cerrar Sesion"
+                android:icon="@drawable/logout_ic"/>
+        </menu>
+
+    </item>
+
+</menu>

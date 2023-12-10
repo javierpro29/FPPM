@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711068202707",
+    "project_id": "fppm-a84b7",
+    "storage_bucket": "fppm-a84b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711068202707:android:a9cf31cb3c2e4c615b4626",
+        "android_client_info": {
+          "package_name": "com.andersonj.bleach"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMV0odH6ICdXEv6xJpBPGWm-G8qFLC5JM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
