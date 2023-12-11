@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AplicarMulta"
+    android:paddingHorizontal="40dp">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicar Multa"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/txCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cédula"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/txPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Placa del vehiculo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txCedula"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/txMotivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Motivo de multa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txPlaca"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/txFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Foto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txMotivo"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/txComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comentario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txFoto"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/txLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txComentario"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/txLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txLatitud"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/txFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha ej: 10/12/2023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txLongitud"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/txHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hora ej: 10:30 PM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txFecha"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/aplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicar multa"
+        app:layout_constraintTop_toBottomOf="@+id/txHora"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

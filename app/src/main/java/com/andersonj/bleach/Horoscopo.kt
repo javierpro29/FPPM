@@ -16,3 +16,4 @@ class Horoscopo : AppCompatActivity() {
         return true
     }
 }
+
