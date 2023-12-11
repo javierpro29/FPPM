@@ -15,6 +15,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NavigationDrawer"
         tools:targetApi="31">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+
+        <activity
+            android:name=".MapaMultas"
+            android:exported="false" />
+        <activity
+            android:name=".MultasRegistradas"
+            android:exported="false" />
+        <activity
+            android:name=".AplicarMulta"
+            android:exported="false" />
+        <activity
+            android:name=".Horoscopo"
+            android:exported="false" />
         <activity
             android:name=".noticiasAdapter"
             android:exported="false" />
@@ -38,6 +58,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity"
@@ -46,6 +67,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
         </activity>
     </application>
 

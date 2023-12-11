@@ -14,6 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var auth: FirebaseAuth
 
@@ -55,6 +56,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             R.id.nav_noticias -> getNoticias()
 
+            R.id.nav_aplicar_multa -> getAplicarMulta()
+
+            R.id.nav_multas_registradas -> getMultasRegistradas()
+
+            R.id.nav_mapa_multas -> getMapaMultas()
+
+            R.id.nav_horoscopo -> getHoroscopo()
+
 
             R.id.nav_cerrarSesion -> cerrarSesion()
 
@@ -90,6 +99,26 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun getNoticias(){
         val intent = Intent(this, Noticias::class.java)
+
+      
+    private fun getAplicarMulta(){
+        val intent = Intent(this, AplicarMulta::class.java)
+        startActivity(intent)
+    }
+
+    private fun getMultasRegistradas(){
+        val intent = Intent(this, MultasRegistradas::class.java)
+        startActivity(intent)
+    }
+
+    private fun getMapaMultas(){
+        val intent = Intent(this, MapaMultas::class.java)
+        startActivity(intent)
+    }
+
+    private fun getHoroscopo(){
+        val intent = Intent(this, Horoscopo::class.java)
+
         startActivity(intent)
     }
 
