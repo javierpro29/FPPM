@@ -57,7 +57,8 @@ dependencies {
 
     implementation("com.google.android.gms:play-services-maps:18.2.0")
 
-
+    implementation("com.android.volley:volley:1.2.1")
+    implementation("com.google.code.gson:gson:2.10.1")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

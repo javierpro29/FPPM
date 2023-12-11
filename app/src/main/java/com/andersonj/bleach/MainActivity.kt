@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             R.id.nav_consulta_vehiculo -> getConsultarVehiculo()
 
-            R.id.nav_consulta_conductor -> getConsultarConductor()
+            R.id.nav_noticias -> getNoticias()
 
             R.id.nav_aplicar_multa -> getAplicarMulta()
 
@@ -97,6 +97,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         startActivity(intent)
     }
 
+    private fun getNoticias(){
+        val intent = Intent(this, Noticias::class.java)
+
+      
     private fun getAplicarMulta(){
         val intent = Intent(this, AplicarMulta::class.java)
         startActivity(intent)
@@ -114,6 +118,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun getHoroscopo(){
         val intent = Intent(this, Horoscopo::class.java)
+
         startActivity(intent)
     }
 
