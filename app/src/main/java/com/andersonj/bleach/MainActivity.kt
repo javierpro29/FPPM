@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             R.id.nav_mapa_multas -> getMapaMultas()
 
+
             R.id.nav_horoscopo -> getHoroscopo()
 
 
@@ -111,6 +112,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val intent = Intent(this, MapaMultas::class.java)
         startActivity(intent)
     }
+
 
     private fun getHoroscopo(){
         val intent = Intent(this, Horoscopo::class.java)
