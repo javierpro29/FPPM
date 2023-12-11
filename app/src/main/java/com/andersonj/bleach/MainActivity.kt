@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             R.id.nav_consulta_vehiculo -> getConsultarVehiculo()
 
-            R.id.nav_consulta_conductor -> getConsultarConductor()
+            R.id.nav_noticias -> getNoticias()
 
 
             R.id.nav_cerrarSesion -> cerrarSesion()
@@ -85,6 +85,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun getConsultarConductor(){
         val intent = Intent(this, ConsultaConductor::class.java)
+        startActivity(intent)
+    }
+
+    private fun getNoticias(){
+        val intent = Intent(this, Noticias::class.java)
         startActivity(intent)
     }
 
