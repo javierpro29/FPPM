@@ -54,6 +54,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             R.id.nav_consulta_vehiculo -> getConsultarVehiculo()
 
+            R.id.nav_consulta_conductor -> getConsultarConductor()
+
             R.id.nav_noticias -> getNoticias()
 
             R.id.nav_aplicar_multa -> getAplicarMulta()
@@ -62,6 +64,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             R.id.nav_mapa_multas -> getMapaMultas()
 
+            R.id.nav_clima -> getClima()
 
             R.id.nav_horoscopo -> getHoroscopo()
 
@@ -98,9 +101,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         startActivity(intent)
     }
 
-    private fun getNoticias(){
+    private fun getNoticias() {
         val intent = Intent(this, Noticias::class.java)
-
+        startActivity(intent)
+    }
       
     private fun getAplicarMulta(){
         val intent = Intent(this, AplicarMulta::class.java)
@@ -117,6 +121,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         startActivity(intent)
     }
 
+    private fun getClima(){
+        val intent = Intent(this, Clima::class.java)
+        startActivity(intent)
+    }
+
 
     private fun getHoroscopo(){
         val intent = Intent(this, Horoscopo::class.java)
@@ -126,7 +135,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
 
-    private  fun cerrarSesion(){
+    private fun cerrarSesion(){
         auth.signOut()
 
         // Redirigir al usuario a la pantalla de inicio de sesión
@@ -134,7 +143,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         startActivity(intent)
         finish()
     }
-
 
 
 }

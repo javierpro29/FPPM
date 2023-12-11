@@ -46,8 +46,7 @@ class MapaMultas : AppCompatActivity(), OnMapReadyCallback {
 
             map.addMarker(MarkerOptions().position(ubicacion)
                 .title("Cedula: $cedula")
-                .snippet("""Placa: $placa \
-                    "Motivo: $motivo""")
+                .snippet("""Placa: $placa , "Motivo: $motivo""")
 
             )
         } else {

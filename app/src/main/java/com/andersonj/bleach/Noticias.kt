@@ -29,6 +29,8 @@ class Noticias : AppCompatActivity() {
         noticiasAdapter = noticiasAdapter(newsList)
         recyclerView.adapter = noticiasAdapter
         fetchNews()
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun fetchNews() {
@@ -66,5 +68,11 @@ class Noticias : AppCompatActivity() {
         }
         spannable.setSpan(StyleSpan(style), 0, spannable.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         return spannable
+    }
+
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
